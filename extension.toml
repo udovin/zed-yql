@@ -8,4 +8,4 @@ repository = "https://github.com/udovin/zed-yql"
 
 [grammars.yql]
 repository = "https://github.com/udovin/tree-sitter-yql"
-rev = "0667e3fa473602ec2d3d96ab929cd4e4e565bc5d"
+rev = "4ea197e593ea66ab0ea851c891c8e16ba2bf01a9"
