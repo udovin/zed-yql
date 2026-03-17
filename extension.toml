@@ -1,0 +1,11 @@
+id = "yql"
+name = "YQL"
+version = "0.0.1"
+schema_version = 1
+authors = ["Ivan Udovin <wilcot@ya.ru>"]
+description = "YTsaurus YQL query language support for Zed"
+repository = "https://github.com/udovin/zed-yql"
+
+[grammars.yql]
+repository = "https://github.com/udovin/tree-sitter-yql"
+rev = "56d636b805476d8c77cac4c9cd01544afaee7aed"
