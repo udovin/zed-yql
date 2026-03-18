@@ -2,15 +2,17 @@
 ; Indentation queries for YTsaurus YQL (Zed Editor)
 ; ============================================================================
 
-; SELECT body indents its clauses
-(select_body) @indent
+; SELECT clause (SELECT keyword + column list) indents its items.
+; Each SQL clause indents its own content independently.
+(select_clause) @indent
 
 ; Individual SQL clauses indent their content
 (from_clause) @indent
 (where_clause) @indent
 (group_by_clause) @indent
 (having_clause) @indent
-(join_clause) @indent
+(join_source) @indent
+(join_constraint) @indent
 (order_by_clause) @indent
 (flatten_clause) @indent
 (without_clause) @indent

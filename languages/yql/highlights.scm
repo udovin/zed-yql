@@ -329,7 +329,7 @@
 (from_clause
   alias: (identifier (plain_identifier) @type))
 
-(join_clause
+(join_source
   alias: (identifier (plain_identifier) @type))
 
 ; ---------------------------------------------------------------------------
