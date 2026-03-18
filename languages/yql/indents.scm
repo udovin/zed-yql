@@ -5,6 +5,18 @@
 ; SELECT body indents its clauses
 (select_body) @indent
 
+; Individual SQL clauses indent their content
+(from_clause) @indent
+(where_clause) @indent
+(group_by_clause) @indent
+(having_clause) @indent
+(join_clause) @indent
+(order_by_clause) @indent
+(flatten_clause) @indent
+(without_clause) @indent
+(window_clause) @indent
+(limit_clause) @indent
+
 ; Parenthesized groups
 (parenthesized_expression ")" @end) @indent
 (subquery_expression ")" @end) @indent

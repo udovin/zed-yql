@@ -30,9 +30,6 @@
 
 (backtick_identifier) @string.special
 
-; Named expressions: $foo, $_bar
-(named_expression) @variable.special
-
 ; ---------------------------------------------------------------------------
 ; Keywords — anonymous token matching (via alias in grammar's kw() helper)
 ; ---------------------------------------------------------------------------
@@ -377,3 +374,6 @@
 
 (import_symbol
   (named_expression) @variable.special)
+
+; General named expression fallback (must be last so specific rules above win)
+(named_expression) @variable.special
